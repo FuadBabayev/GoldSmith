@@ -1,0 +1,1887 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 45px;
+  background-color: #060606;
+  color: #fff;
+}
+.headerDiv {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+.fa-brands {
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+.fa-brands:hover {
+  color: #e1e2e3;
+}
+.headerPrg {
+  font-weight: 800;
+  font-family: "Jost", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.headerUl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.headerLi {
+  font-family: "Jost", sans-serif;
+  list-style: none;
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.headerLi:hover {
+  color: #e1e2e3;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+.navbarUl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.navbarUl :hover {
+  color: #060606;
+}
+.navbarLi {
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.dropDownMenuUl {
+  width: 240px;
+  height: 469px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #fff;
+  position: absolute;
+  top: 45px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.dropDownMenuLi {
+  cursor: pointer;
+  color: #7d7d7d;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+.menu:hover .dropDownMenuUl {
+  visibility: visible;
+  opacity: 1;
+}
+.fa-chevron-down {
+  font-size: 10px;
+  font-weight: 700;
+}
+.navbarSpan {
+  font-size: 24px;
+  font-weight: 800;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+  padding-right: 270px;
+  cursor: pointer;
+}
+.navbarIcons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.fa-magnifying-glass {
+  color: #060606;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.positionRelative {
+  position: relative;
+}
+.navbarCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  background-color: #060606;
+  font-size: 8px;
+  border-radius: 20px;
+  position: absolute;
+  left: -12px;
+  top: -8px;
+}
+.fa-bag-shopping,
+.fa-heart,
+.fa-rotate-left {
+  cursor: pointer;
+  color: #060606;
+}
+.fa-user {
+  cursor: pointer;
+  color: #060606;
+  font-size: 16px;
+}
+.grayIcon {
+  cursor: pointer;
+  color: #7a7a7a;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.firstSection {
+  width: 100%;
+  height: 790px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.leftDiv {
+  background-image: url(../imgs/accesories-full-2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 1104px;
+  height: 750px;
+  position: relative;
+  padding: 0 10px;
+}
+.leftDiv:hover .leftDivLeftSlideIcon {
+  background-color: #fff;
+  color: #060606;
+}
+.leftDivLeftSlideIcon {
+  position: absolute;
+  top: 42%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #f8f9fa1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e2e21a;
+  transition: 0.3s;
+}
+.leftDiv:hover .leftDivRightSlideIcon {
+  background-color: #fff;
+  color: #060606;
+}
+.leftDivRightSlideIcon {
+  position: absolute;
+  right: 10px;
+  top: 42%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #f8f9fa1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e2e21a;
+  transition: 0.3s;
+}
+.leftDivWord {
+  width: 420px;
+  position: absolute;
+  top: 30%;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  color: #fff;
+}
+.leftDivHeader {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+}
+.leftDivPrg {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+.leftDivBtn {
+  width: 160px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060606;
+  border: none;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+.leftDivBtn:hover {
+  background-color: transparent;
+}
+.rightDiv {
+  padding: 0 10px;
+  width: 354.8px;
+  height: 750px;
+  background-image: url(../imgs/7.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.rightDivWord {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 575px;
+}
+.rightDivSpanGold {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+}
+.rightDivHeader {
+  font-family: "Amethysta", Sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 15px 0;
+}
+.rightDivDate {
+  font-family: "Amethysta", Sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.rightDivSpanLink {
+  text-decoration: underline;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.secondSection {
+  width: 100%;
+  height: 265px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.secondSectionCol {
+  width: 379.8px;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.secondSectionImg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+.secondSectionHeader {
+  font-size: 20px;
+  font-weight: 700;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+}
+.secondSectionPrg {
+  font-weight: 400;
+  color: #7d7d7d;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+}
+.thirdSection {
+  width: 100%;
+  height: 767.4px;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.thirdSectionLeftDiv {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  height: 737.4px;
+  width: 347.31px;
+  cursor: pointer;
+}
+.thirdSectionLeftDivWord {
+  text-align: center;
+  position: relative;
+  top: 78%;
+  color: #060606;
+  display: flex;
+  flex-direction: column;
+}
+.thirdSectionLeftDivSpan {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+}
+.thirdSectionLeftDivHeader {
+  font-family: "Amethysta", Sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 15px 0;
+}
+.thirdSectionLeftDivDate {
+  font-family: "Amethysta", Sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.thirdSectionLeftDivPrg {
+  text-decoration: underline;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.thirdSectionRightDiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1104.4px;
+  gap: 0 20px;
+}
+.thirdSectionRightDiv:hover .thirdSectionRightDivHeartIcon {
+  background-color: #fff;
+}
+.thirdSectionRightDiv:hover .thirdSectionRightDivRightHoverPrg {
+  background-color: #fff;
+}
+.thirdSectionRightDivBox {
+  width: 261.1px;
+  height: 363.7px;
+  position: relative;
+  overflow: hidden;
+}
+.thirdSectionRightDivHeartIconPrg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.thirdSectionRightDivHoverPrg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.9);
+  font-size: 12px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  opacity: 0;
+  color: #fff;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+  width: 95.98px;
+  height: 28px;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+  visibility: hidden;
+}
+.thirdSectionRightDivHeartIconPrg:hover .thirdSectionRightDivHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  right: 40px;
+}
+.thirdSectionRightDivHeartIcon {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.thirdSectionRightDivHeartIcon:hover .fontSize-15 {
+  color: #abb8c3;
+}
+.thirdSectionRightDivRightHoverPrg:hover .fontSize-15 {
+  color: #abb8c3;
+}
+.fontSize-15 {
+  font-size: 15px;
+  cursor: pointer;
+}
+.thirdSectionRightDivRightHoverIcons-1 {
+  right: -25px;
+  top: 45px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.thirdSectionRightDivBox:hover .thirdSectionRightDivRightHoverIcons-1 {
+  visibility: visible;
+  right: 10px;
+  opacity: 1;
+}
+.thirdSectionRightDivRightHoverPrg {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.thirdSectionRightDivRightHoverPrgCompare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.9);
+  font-size: 12px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  opacity: 0;
+  color: #fff;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+  width: 64.86px;
+  visibility: hidden;
+  height: 28px;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+}
+.thirdSectionRightDivRightHoverIcons-1:hover
+  .thirdSectionRightDivRightHoverPrgCompare {
+  visibility: visible;
+  opacity: 1;
+}
+.thirdSectionRightDivRightHoverIcons-1:hover
+  .thirdSectionRightDivRightHoverPrgCompare {
+  opacity: 1;
+  right: 40px;
+}
+.thirdSectionRightDivRightHoverPrgView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.9);
+  font-size: 12px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  opacity: 0;
+  color: #fff;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+  width: 76.72px;
+  visibility: hidden;
+  height: 28px;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+}
+.thirdSectionRightDivRightHoverIcons-2 {
+  right: -25px;
+  top: 80px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.thirdSectionRightDivBox:hover .thirdSectionRightDivRightHoverIcons-2 {
+  visibility: visible;
+  right: 10px;
+  opacity: 1;
+}
+.thirdSectionRightDivRightHoverIcons-2:hover
+  .thirdSectionRightDivRightHoverPrgView {
+  visibility: visible;
+  opacity: 1;
+  right: 40px;
+}
+.thirdSectionRightDivBoxImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.5s;
+  height: 261.1px;
+  width: 261.1px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.thirdSectionRightDivBox:hover .thirdSectionRightDivBoxImg {
+  background-size: 110%;
+}
+.thirdSectionHoverBtn {
+  width: 100%;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060606;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+  position: absolute;
+  top: 261px;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  overflow: hidden;
+}
+.thirdSectionRightDivBox:hover .thirdSectionHoverBtn {
+  height: 34px;
+  top: 227px;
+  visibility: visible;
+  opacity: 1;
+}
+.thirdSectionRightDivHeader {
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: #060606;
+  margin: 15px 0 10px;
+  cursor: pointer;
+}
+.thirdSectionRightDivPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thirdSectionRightDivSpan {
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+.thirdSectionRightDivStars {
+  display: flex;
+  align-items: center;
+  color: #f7ba01;
+  font-size: 10px;
+}
+.fourthSection {
+  width: 100%;
+  height: 83.2px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.fourthSectionLeftDiv {
+  width: 902.3px;
+  height: 83.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff5f5;
+  border: 1px dashed #da7474;
+  border-radius: 10px;
+}
+.fourthSectionLeftDivRedPrg {
+  font-size: 15px;
+  color: #f03e3e;
+  font-weight: 900;
+  font-family: "Manrope", sans-serif;
+}
+.fourthSectionLeftDivBtn {
+  width: 128.68px;
+  height: 41.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #f70000;
+  font-size: 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 2px;
+  border: none;
+  margin: 0 20px;
+}
+.fourthSectionLeftDivBlackPrg {
+  font-size: 14px;
+  font-weight: 700;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+}
+.fourthSectionRightDiv {
+  width: 556.9px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fac2131c;
+  border: 1px dashed #fac213;
+  border-radius: 10px;
+}
+.fourthSectionRightDivBlackPrg {
+  font-size: 15px;
+  font-weight: 900;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+}
+.fourthSectionRightDivBtn {
+  width: 164.06px;
+  height: 38px;
+  background-color: #fac213;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+}
+.fifthSection {
+  display: flex;
+  justify-content: center;
+}
+.fifthSectionLeftDiv {
+  width: 384.8px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  gap: 20px;
+}
+.fifthSectionLeftDivFeatured {
+  height: 559.6px;
+  width: 344.8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fifthSectionLeftDivFeaturedWord {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fifthSectionLeftDivFeaturedHeader {
+  font-size: 20px;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+.fifthSectionLeftDivFeaturedPrg {
+  font-size: 12px;
+  font-weight: 500;
+  color: #060606;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+}
+.fifthSectionLeftDivProducts {
+  width: 344.8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fifthSectionLeftDivProduct-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 344.8px;
+  height: 157.2px;
+  padding: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+}
+.fifthSectionLeftDivProduct-1:hover {
+  border-color: #060606;
+}
+.fifthSectionLeftDivProduct-1:hover .fifthSectionLeftDivFeaturedImg {
+  background-size: 110%;
+}
+.fifthSectionLeftDivProductImgText,
+.fifthSectionLeftDivProductBtnPrg {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.fifthSectionLeftDivFeaturedImg {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+  opacity: 1;
+  transition: 0.3s;
+}
+.fifthSectionLeftDivFeaturedImg:hover {
+  opacity: 0.8;
+}
+.fifthSectionLeftDivFeaturedText {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: start;
+  justify-content: center;
+}
+.fifthSectionLeftDivProductHeader {
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  color: #060606;
+  cursor: pointer;
+  font-weight: 700;
+}
+.fifthSectionLeftDivProductSpan {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7a7a7a;
+  font-family: "Jost", sans-serif;
+}
+.fifthSectionLeftDivProductPrg {
+  color: #060606;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+.fifthSectionLeftDivProductBtn {
+  width: 100px;
+  height: 25.6px;
+  color: #f70000;
+  border: 1px solid #ffbfc1;
+  border-radius: 4px;
+  background: #ffdbdc;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fifthSectionLeftDivProductPrgGray {
+  font-size: 12px;
+  color: #7d7d7d;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+.fifthSectionLeftDivTestimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fifthSectionLeftDivTestimonialsHeader {
+  font-size: 20px;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  text-align: start;
+}
+.fifthSectionLeftDivTestimonialsBox {
+  width: 345px;
+  height: 357.5px;
+  background-color: #060606;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+.fifthSectionLeftDivTestimonialsBoxCustomerImgInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.fifthSectionLeftDivTestimonialsBoxCustomerImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+.fifthSectionLeftDivTestimonialsBoxCustomerInfo {
+  display: flex;
+  flex-direction: column;
+}
+.fifthSectionLeftDivTestimonialsBoxCustomerHeader {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+}
+.fifthSectionLeftDivTestimonialsBoxCustomerSpan {
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.fifthSectionLeftDivTestimonialsBoxCustomerPrg {
+  text-align: center;
+  width: 265px;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.fifthSectionLeftDivYellowDiv {
+  width: 344.8px;
+  height: 148.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fac2131c;
+  border: 1px dashed #fac213;
+  border-radius: 10px;
+}
+.fourthSectionRightDivBtnBlack {
+  width: 283.2px;
+  height: 38px;
+  background-color: #fac213;
+  color: #060606;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+}
+.fifthSectionLeftDivAccessory {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+.fifthSectionLeftDivAccessoryImg {
+  width: 344.8px;
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+.fifthSectionLeftDivAccessoryWord {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 10px;
+  color: #060606;
+  position: relative;
+  top: 112px;
+  padding: 30px;
+}
+.fifthSectionLeftDivAccessorySpan {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+}
+.fifthSectionLeftDivAccessoryPrg {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+}
+.fifthSectionLeftDivCommonDivs {
+  display: flex;
+  flex-direction: column;
+}
+.fifthSectionLeftDivCommonDiv-1 {
+  width: 341.6px;
+  height: 139.2px;
+  border: 1px solid #e1e2e3;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 4px;
+}
+.fifthSectionLeftDivCommonDivsImg {
+  width: 35px;
+  height: 35px;
+}
+.fifthSectionLeftDivCommonDivsHeader {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  color: #060606;
+}
+.fifthSectionLeftDivCommonDivsPrg {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: #7d7d7d;
+}
+.fifthSectionRightDiv {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 1124.4px;
+}
+.fifthSectionRightDivBoxDiv {
+  width: 1114.4px;
+  height: 976.4px;
+  border: 2px solid #060606;
+  border-radius: 4px;
+}
+.fifthSectionRightDivTopDiv {
+  background-image: url(../imgs/1950-450-8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  color: #fff;
+  cursor: pointer;
+  padding: 30px;
+}
+.fifthSectionRightDivTopDivSpan {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Jost", sans-serif;
+}
+.fourthSectionRightDivHeader {
+  margin: 15px 0 100px;
+  font-family: "Amethysta", Sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.fifthSectionRightDivTopDivPrg {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  text-decoration: underline;
+}
+.fifthSectionRightDivSaleDiv {
+  width: 100%;
+  height: 94.6px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #9dab862e;
+  border: 1px dashed #9dab86;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.fifthSectionRightDivSalePrg {
+  width: 113.65px;
+  height: 100%;
+  background-color: #9dab86;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fifthSectionRightDivSaleWord {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: end;
+}
+.fifthSectionRightDivSaleHeader {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 900;
+  font-family: "Manrope", sans-serif;
+}
+.fifthSectionRightDivSaleSpan-1 {
+  font-weight: 400;
+  color: #7d7d7d;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+}
+.right20 {
+  right: -15px;
+  top: 45px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.thirdSectionRightDivBox:hover .right20 {
+  visibility: visible;
+  right: 20px;
+  opacity: 1;
+}
+.top80 {
+  right: -15px;
+  top: 80px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.thirdSectionRightDivBox:hover .top80 {
+  visibility: visible;
+  right: 20px;
+  opacity: 1;
+}
+.with244 {
+  width: 244.8px;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060606;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+  position: absolute;
+  top: 244.8px;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  overflow: hidden;
+}
+.thirdSectionRightDivBox:hover .with244 {
+  height: 34px;
+  top: 210.8px;
+  visibility: visible;
+  opacity: 1;
+}
+.fifthSectionRightDivHeadingTop {
+  width: 1114.4px;
+  height: 71px;
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fifthSectionRightDivHeadingTopHeader {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+.fifthSectionRightDivHeadingTopLeftPrg {
+  font-size: 15px;
+  font-weight: 400;
+  color: #7d7d7d;
+  font-family: "Jost", sans-serif;
+}
+.fifthSectionRightDivHeadingTopRightPrg {
+  color: #060606;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.fifthSectionRightDivProducts {
+  width: 1114.4px;
+  height: 404.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.fifthSectionRightDivProduct-1 {
+  width: 263.5px;
+  height: 404.5px;
+  padding: 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.fifthSectionRightDivProduct-1:hover {
+  border-color: #f70000;
+}
+.saleDiv {
+  width: 51.33px;
+  height: 20px;
+  background-color: #060606;
+  border: none;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jost", sans-serif;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.fifthSectionIconLeft {
+  top: 45%;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fifthSectionIconRight {
+  top: 45%;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fifthSectionRightDivProductImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 221.9px;
+  height: 221.9px;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.fifthSectionRightDivProduct-1:hover .fifthSectionRightDivProductImg {
+  background-size: 109%;
+}
+.fifthSectionRightDivHeartIconPrg {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.fifthSectionRightDivHeartIcon {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.fifthSectionRightDivProducts:hover .fifthSectionIconLeft {
+  background-color: #fff;
+  color: #060606;
+}
+.fifthSectionRightDivProducts:hover .fifthSectionIconRight {
+  background-color: #fff;
+  color: #060606;
+}
+.fifthSectionRightDivRightHoverIcons-1 {
+  right: -5px;
+  top: 65px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.fifthSectionRightDivRightHoverIcons-2 {
+  right: -5px;
+  top: 100px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.fifthSectionRightDivRightHoverIcons-3 {
+  right: -5px;
+  top: 135px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.fifthSectionRightDivRightHoverPrg {
+  background-color: #fff;
+}
+.fifthSectionRightDivProduct-1:hover .thirdSectionRightDivRightHoverIcons-1 {
+  visibility: visible;
+  right: 30px;
+  opacity: 1;
+}
+.fifthSectionRightDivProduct-1:hover .thirdSectionRightDivRightHoverIcons-2 {
+  visibility: visible;
+  right: 30px;
+  opacity: 1;
+}
+.fifthSectionRightDivProduct-1:hover .thirdSectionRightDivRightHoverIcons-3 {
+  visibility: visible;
+  right: 30px;
+  opacity: 1;
+}
+.fifthSectionRightDivProduct-1:hover .thirdSectionHoverBtn {
+  height: 34px;
+  top: 227px;
+  visibility: visible;
+  opacity: 1;
+}
+.fifthSectionRightDivSpanStar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.review {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color: #060606;
+  font-family: "Jost", sans-serif;
+}
+.grayProgressBar {
+  width: 221.9px;
+  height: 8px;
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0 10px 0;
+}
+.redProgressBar {
+  height: 8px;
+  background-color: #f70000;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0 10px 0;
+}
+.soldAvailableDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grayColorSpan {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7d7d7d;
+  font-family: "Jost", sans-serif;
+}
+.blackColorDiv {
+  color: #060606;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+}
+
+.fifthSectionRightDivTextTime {
+  width: 1114.4px;
+  height: 669.8px;
+  background-color: #f7f7f8;
+  position: relative;
+  border: 1px solid #e1e2e3;
+  border-radius: 10px;
+}
+.fifthSectionRightDivTextTimeImg {
+  position: absolute;
+  top: 0;
+  width: 1114.4px;
+  height: 669.8px;
+  background-image: url(../imgs/1920-8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.fifthSectionRightDivText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 440px;
+  padding: 100px 0 0 40px;
+}
+.fifthSectionRightDivYellowDiv {
+  background-color: #fac213;
+  color: #060606;
+  width: 165.18px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Jost", sans-serif;
+}
+.fifthSectionRightDivTextHeader {
+  font-size: 32px;
+  font-weight: 700;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+}
+.fifthSectionRightDivTextPrg {
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 15px;
+  color: #7d7d7d;
+  font-family: "Jost", sans-serif;
+}
+.fifthSectionRightDivTime {
+  width: 388.61px;
+  height: 92.2px;
+  border: 2px dashed #7d7d7d;
+  border-radius: 10px;
+}
+.fifthSectionRightDivTimePrg {
+  color: #060606;
+  font-size: 49px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jost", sans-serif;
+  height: 100%;
+}
+.fifthSectionRightDivTextBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+  background-color: #060606;
+  width: 240px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-family: "Jost", sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.sixthSection {
+  background-image: url(../imgs/background-2-scaled.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  margin-top: 30px;
+}
+.sixthSectionText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 190px;
+}
+.sixthSectionYellowDiv {
+  background-color: #fac213;
+  color: #060606;
+  width: 118.14px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Jost", sans-serif;
+}
+.sixthSectionHeader {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+.sixthSectionPrg {
+  line-height: 1.8;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+.sixthSectionBtn {
+  width: 239px;
+  height: 41.2px;
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.sixthSectionBtn:hover {
+  background-color: #fff;
+  color: #060606;
+}
+.sixthSectionSpan {
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.secondSectionIcon {
+  font-size: 14px;
+}
+.seventhSection {
+  width: 100%;
+  height: 549.8px;
+  padding: 80px 10px;
+}
+.seventhSectionText {
+  width: 499px;
+  margin: 0 auto;
+  text-align: center;
+}
+.seventhSectionHeader {
+  font-size: 26px;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.seventhSectionPrg {
+  line-height: 2;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: #7d7d7d;
+}
+.seventhSectionSpan {
+  color: #060606;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.seventhSectionSpan:hover {
+  color: #7d7d7d;
+}
+.seventhSectionImages {
+  width: 100%;
+  height: 197px;
+  margin-top: 40px;
+  position: relative;
+}
+.seventhSectionIconLeft {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #7d7d7d;
+  position: absolute;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 10px;
+  z-index: 1;
+  top: 40%;
+}
+.seventhSectionImages:hover .seventhSectionIconLeft {
+  background-color: #fff;
+  color: #060606;
+}
+.seventhSectionIconRight {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #7d7d7d;
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  z-index: 1;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seventhSectionImages:hover .seventhSectionIconRight {
+  background-color: #fff;
+  color: #060606;
+}
+.seventhSectionImg {
+  width: 197px;
+  height: 197px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  position: relative;
+}
+.seventhSectionHoverPrg {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  left: 30%;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.one:hover {
+  border-radius: 50px;
+  background-size: 110%;
+}
+.one:hover .seventhSectionHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  bottom: 44%;
+}
+.two:hover {
+  border-radius: 50px;
+  background-size: 110%;
+}
+.two:hover .seventhSectionHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  bottom: 44%;
+}
+.three:hover {
+  border-radius: 50px;
+  background-size: 110%;
+}
+.three:hover .seventhSectionHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  bottom: 44%;
+}
+.four:hover {
+  border-radius: 50px;
+  background-size: 110%;
+}
+.four:hover .seventhSectionHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  bottom: 44%;
+}
+.five:hover {
+  border-radius: 50px;
+  background-size: 110%;
+}
+.five:hover .seventhSectionHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  bottom: 44%;
+}
+.six:hover {
+  border-radius: 50px;
+  background-size: 110%;
+}
+.six:hover .seventhSectionHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  bottom: 44%;
+}
+.seven:hover {
+  border-radius: 50px;
+  background-size: 110%;
+}
+.seven:hover .seventhSectionHoverPrg {
+  opacity: 1;
+  visibility: visible;
+  bottom: 44%;
+}
+.secondSectionInstaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.fa-square-instagram {
+  color: #ff00c3;
+}
+.one:hover .secondSectionInstaIcon {
+  opacity: 1;
+  visibility: visible;
+}
+.two:hover .secondSectionInstaIcon {
+  opacity: 1;
+  visibility: visible;
+}
+.three:hover .secondSectionInstaIcon {
+  opacity: 1;
+  visibility: visible;
+}
+.four:hover .secondSectionInstaIcon {
+  opacity: 1;
+  visibility: visible;
+}
+.five:hover .secondSectionInstaIcon {
+  opacity: 1;
+  visibility: visible;
+}
+.six:hover .secondSectionInstaIcon {
+  opacity: 1;
+  visibility: visible;
+}
+.seven:hover .secondSectionInstaIcon {
+  opacity: 1;
+  visibility: visible;
+}
+.eighthSection {
+  width: 100%;
+  height: 239.2px;
+  padding: 40px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e1e2e3;
+}
+.eighthSectionWord {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 5px;
+}
+.eighthSectionHeader {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #7a7a7a;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+}
+.eighthSectionPrg {
+  font-size: 26px;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+.eighthSectionSpan {
+  font-size: 11px;
+  color: #7d7d7d;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #7a7a7a;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+}
+input {
+  width: 396.54px;
+  height: 52.6px;
+  border: 1px solid #e1e2e3;
+  padding-left: 10px;
+  color: #7d7d7d;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+.submitBtn {
+  width: 100px;
+  height: 52.6px;
+  background-color: #060606;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+.formPrg {
+  margin-top: 20px;
+  color: #7d7d7d;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+footer {
+  width: 100%;
+  height: 459.2px;
+  display: flex;
+  flex-direction: column;
+  background-color: #060606;
+}
+.footerTopDiv {
+  width: 100%;
+  height: 389.2px;
+  padding: 80px 10px;
+  display: flex;
+}
+.footerTopDivCol {
+  width: 239.86px;
+  height: 208.4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.footerHeader {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 5px;
+}
+.footerSpan {
+  color: #7a7a7a;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footerSpan:hover {
+  color: #696868;
+}
+.footerTopDivCol2 {
+  width: 539.7px;
+  height: 208.4px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.footerIcon,
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.icon1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 15px;
+  background-color: #69727d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.program {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  color: #fff;
+  cursor: pointer;
+}
+.firstIcon {
+  background-color: #3b5998;
+}
+.secondIcon {
+  background-color: #1da1f2;
+}
+.thirdIcon {
+  background-color: #cd201f;
+}
+.fourthIcon {
+  background-color: #2ca5e0;
+}
+.fifthIcon {
+  background-color: #25d366;
+}
+.footerBottomDiv {
+  width: 100%;
+  height: 69.2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-top: 1px solid #e1e2e330;
+}
+.footerBottomSpan {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+}
+.footerImg {
+  width: 273.65px;
+  height: 24.05px;
+}
